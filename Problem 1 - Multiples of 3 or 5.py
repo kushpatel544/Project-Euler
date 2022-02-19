@@ -1,6 +1,6 @@
 #URL: https://projecteuler.net/problem=1
 
-######## MY SOLUTIION ###########
+######## FIRST SOLUTIION ###########
 x=3
 y=5
 sum=0
