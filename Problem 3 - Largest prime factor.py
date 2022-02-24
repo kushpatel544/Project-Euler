@@ -1,18 +1,20 @@
 #URL - https://projecteuler.net/problem=3
 
+import math
 n = 600851475143
 
 def checkPrime(p):
-    c=0
-    x=p
-    while(x>0 and c<3):
-        if(p%x==0):
-            c+=1
-        x-=1
-    if(c==2):
+    if p == 2:
         return True
-    else:
+    elif p % 2 == 0:
         return False
+    i = 3
+    f=int(math.sqrt(p))+1
+    while(i<f):
+        if(p%i==0):
+            return False
+        i+=1
+    return True
 p=2
 
 while(n!=1):
