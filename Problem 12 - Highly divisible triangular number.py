@@ -11,7 +11,12 @@ n, i, c = 0, 1, 0
 #             k+=1
 #     return k
 
-#Using prime factorization
+"""
+Using prime factorization find prime factors of the number and the multiplication of exponential+1 
+of all factors gives the total number of factors 
+Ex: 100 = 2*2*5*5 = 2^2*5^2 = (2+1)*(2+1)= 9
+    100 has 9 factors 1, 2, 4, 5, 10, 20, 25, 50, 100
+"""
 def checkPrime(p):
     if p == 2:
         return True
